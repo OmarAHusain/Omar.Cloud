@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>OMAR.CLOUD Habit Calendar Project</title>
+		<meta name="description" content="Omar's cloud website">
+		<meta name="keywords" content="programming, projects, fun, videos, youtube">
+		<meta name="author" content="Omar Husain">
+		<link rel="stylesheet" type="text/css" href="../css/base.css">
+		<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+		<!-- Header and Footer script -->
+		<script> 
+			$(function(){
+			  $("#home").load("../common/home.html"); 
+			});
+		</script> 
+		<!-- Sliding Overlay code -->
+		<script type="text/javascript">
+			/* Open when someone clicks on the span element */
+			function openNav(x) {
+			  document.getElementsByClassName("myDropdown").classList.toggle("change");
+				x.classList.toggle("change");
+			}
+			// Close the dropdown menu if the user clicks outside of it
+			window.onclick = function(event) {
+			  if (!event.target.matches('.dropbtn')) {
+				var dropdowns = document.getElementsByClassName("dropdown-content");
+				var i;
+				for (i = 0; i < dropdowns.length; i++) {
+				  var openDropdown = dropdowns[i];
+				  if (openDropdown.classList.contains('change')) {
+					openDropdown.classList.remove('change');
+					x.classList.toggle("change");
+				  }
+				}
+			  }
+			}ß
+		</script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162856487-1"></script>
+		<script>
+			  window.dataLayer = window.dataLayer || [];
+			  function gtag(){dataLayer.push(arguments);}
+			  gtag('js', new Date());
+
+			  gtag('config', 'UA-162856487-1');
+			</script>
+		<style>
+			.habit-project{
+				height: 100vh;
+				width:70vw;
+			}
+			.habit-header {
+				margin-top: 80px;
+				text-align:center;
+			}
+			
+			.habit-header h1{
+				margin-bottom: -30px;
+			}
+			
+			.habit-entry {
+				text-align: center;
+			}
+			.habit-entry input{
+				margin-bottom: 10px;
+				width: 250px;
+			}
+			
+			.habit-column {
+				text-align: center;
+			}
+			
+			.weekdays {
+				margin-top: 50px;
+				/*ul {list-style: none;}*/
+			}
+			
+			.weekdays li{
+				font-size: 20px;
+				display: inline-block;
+				width:24%;
+				text-align: center;
+			} 
+			
+			.habit-days ul{
+				font-size: 15px;
+				display: inline-block;
+				width:24%;
+				text-align: center;
+			}
+			
+			.habit-days li{
+				padding: 5px 0;				
+				width: 25p;
+				height: 25px;
+				list-style-type: none;
+				border-radius: 50%;
+				
+			}
+			.habit-days li .done {
+				background: #090;	
+				border-radius: 50%;
+				width:20px;
+				height: 20px;
+				padding: 5px;
+			}
+		</style>
+	</head>
+	  <body class="demo-1">
+		<!-- Google Tag Manager (noscript) -->
+			<noscript>
+				<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WLGJPV6" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+		  	</noscript>
+		<!-- End Google Tag Manager (noscript) -->  
+		<main>
+			<div class="project">
+				<div class="habit-project"> 
+					<div class="habit-header">
+						<h1>HABIT CALENDAR</h1><br>
+						<h3>28 days to build a habit</h3>
+						<br>
+					</div>
+					<div class="habit-entry">
+						<input type="text" id="myInput" placeholder="Jog for 15 minutes every day"><br>
+						<button onclick="newElement" class="addBtn">Let's build a habit!</button>
+					</div>
+					<div class="habit-column">
+						<ul class="weekdays">
+							<li>Week 1</li>	
+							<li>Week 2</li>
+							<li>Week 3</li>
+							<li>Week 4</li>
+						</ul>
+					</div>
+					<div class="habit-days">
+						<ul class="week1">
+							<li>1</li>
+							<li>2</li>
+							<li>3</li>
+							<li>4</li>
+							<li>5</li>
+							<li>6</li>
+							<li>7</li>
+						</ul>
+						<ul class="week2">
+							<li>8</li>
+							<li>9</li>
+							<li>10</li>
+							<li>11</li>
+							<li>12</li>
+							<li>13</li>
+							<li>14</li>
+						</ul>
+						<ul class="week3">
+							<li>15</li>
+							<li>16</li>
+							<li>17</li>
+							<li>18</li>
+							<li>19</li>
+							<li>20</li>
+							<li>21</li>
+						</ul>
+						<ul class="week4">
+							<li>22</li>
+							<li>23</li>
+							<li>24</li>
+							<li>25</li>
+							<li>26</li>
+							<li>27</li>
+							<li>28</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="home"></div>
+		</main>
+	</body>
+</html>
