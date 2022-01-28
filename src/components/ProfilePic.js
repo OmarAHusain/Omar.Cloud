@@ -1,12 +1,16 @@
 import React from 'react'
+import '../App.css';
 
 const ProfilePic = props => {
     const {
-        picture
+        picture,
+        alt
     } = props
     
     return (
-        <img style={{"borderRadius": "200"}} src={picture} alt='ProfilePic'/>
+        <div>            
+            <img class="profile-pic" src={picture} alt={alt}/>
+        </div>
     )
 }
 

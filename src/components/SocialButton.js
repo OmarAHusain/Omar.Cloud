@@ -2,26 +2,16 @@ import React from 'react'
 import {Button} from 'reactstrap'
 import '../App.css';
 
-const LinkButton = props => {
+const SocialButton = props => {
     const {
         name,
         title,
         link,
-        picture,
-        alt
+        svgpath,
+        viewbox
     } = props
 
     const myStyles =({
-        myMargin: {
-            margin: "20px"
-        },
-        btnText: {
-            //fontFamily: "Arial",
-            margin: "20px",
-            fontSize: "18px",
-            color: "Black",
-            textShadow: "1px 1px 5px #000000"
-        },
         button: {
             backgroundColor: "black",
             color: "white",
@@ -37,21 +27,18 @@ const LinkButton = props => {
             verticalAlign: "middle",
             userSelect: "none",
             padding: ".375rem .75rem"
-        },
-        svg: {
-            marginRight: "10px"
         }
     })
 
     return (
-        <div class="link-margin" style={myStyles.myMargin}>
-            <h3 class="link-title" style={myStyles.btnText}>{title}</h3>
+        <div class="social-margin">
+            <h3 class="social-text" >{title}</h3>
             <Button color='primary' style={myStyles.button} outline href={link} target="_blank"> 
-            <img class="link-pic" src={picture} alt={alt}/>
+            <svg class="social-svg"  xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox={viewbox}><path fill="white" d={svgpath}></path></svg>
             {name} 
             </Button>
         </div> 
     )
 }
 
-export default LinkButton
+export default SocialButton

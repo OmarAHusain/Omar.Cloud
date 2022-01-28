@@ -1,4 +1,5 @@
 import React from 'react'
+import '../App.css';
 
 const TextBanner = props => {
     const{
@@ -7,9 +8,9 @@ const TextBanner = props => {
      } = props
 
     return (
-        <div>
-            <h1>{title}</h1>
-            <p>{text}</p>
+        <div class="banner-box">
+            <h1 class="banner-title">{title}</h1>
+            <p class="banner-headline">{text}</p>
         </div>
     )
 }
