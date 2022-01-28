@@ -10,7 +10,7 @@ const LinkButton = props => {
     return (
         <div>
             <h3>{title}</h3>
-            <Button color='danger' outline href={link}> {name} </Button>
+            <Button class="" color='danger' outline href={link}> {name} </Button>
         </div> 
     )
 }
