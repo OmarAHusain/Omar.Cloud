@@ -13,10 +13,11 @@ const SocialButton = props => {
 
     const myStyles =({
         button: {
-            backgroundColor: "black",
+            backgroundColor: "rgb(34, 34, 34)",
             color: "white",
             border: "1px solid",
-            borderColor: "white",
+            borderColor: "black",
+            borderRadius: "14px",
             width: "135px",
             display: "inline-block",
             fontSize: "14px",

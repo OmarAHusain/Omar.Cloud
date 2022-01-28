@@ -19,14 +19,15 @@ const LinkButton = props => {
             //fontFamily: "Arial",
             margin: "20px",
             fontSize: "18px",
-            color: "Black",
+            color: "White",
             textShadow: "1px 1px 5px #000000"
         },
         button: {
-            backgroundColor: "black",
+            backgroundColor: "rgb(34, 34, 34)",
             color: "white",
             border: "1px solid",
-            borderColor: "white",
+            borderColor: "black",
+            borderRadius: "14px",
             width: "135px",
             display: "inline-block",
             fontSize: "14px",

@@ -4,6 +4,9 @@ import TextBanner from './components/TextBanner';
 import ProfilePic from './components/ProfilePic';
 import SocialButton from './components/SocialButton';
 import profilepic from './images/ProfilePic.jpg';
+import searten from './images/seartenLogo.png';
+import ooshtech from './images/ooshtechLogo.png';
+import fitsidekick from './images/fitsidekick.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
@@ -26,7 +29,7 @@ function App() {
         />
         <TextBanner 
           title="Omar Adam Husain"
-          text="TPM @ AWS | MBA"
+          text="TPM @ AWS | MBA @ USYD"
         />
 
         <SocialButton 
@@ -69,14 +72,17 @@ function App() {
           title="Projects"
           name="Searten"
           link="https://searten.omar.cloud"
+          picture={searten}
         />
         <LinkButton 
           name="OOSHTech"
           link="https://ooshtech.com"
+          picture={ooshtech}
         />
         <LinkButton 
           name="FitSidekick "
           link="https://web.archive.org/web/20180308044149/http://www.fitsidekick.com/"
+          picture={fitsidekick}
         />
 
       </div>
