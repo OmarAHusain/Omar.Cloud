@@ -1,11 +1,18 @@
 import React from 'react'
 import LinkButton from './components/LinkButton'; 
-
+import TextBanner from './components/TextBanner';
+import ProfilePic from './components/ProfilePic';
 
 function App() {
   return (
     <div >
-      
+      <ProfilePic 
+        picture="" 
+      />
+      <TextBanner 
+        title="Omar Adam Husain @omarahusain"
+        text="TPM @ AWS | MBA"
+      />
 
       <LinkButton 
         title="FB"
