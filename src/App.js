@@ -13,16 +13,9 @@ import './App.css';
 
 function App() {
 
-  const mainStyles = ({
-    centerDiv: {
-      textAlign: "center",
-      //backgroundColor: "black"
-    }
-  })
-
   return (
     <div class="background">
-      <div style={mainStyles.centerDiv}>
+      <div class="center-div container">
         <ProfilePic 
           picture={profilepic}
           alt="Omar Adam Husain" 
@@ -75,7 +68,7 @@ function App() {
           picture={searten}
         />
         <LinkButton 
-          name="OOSHTech"
+          name="ooshtech"
           link="https://ooshtech.com"
           picture={ooshtech}
         />
