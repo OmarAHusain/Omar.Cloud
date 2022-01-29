@@ -45,7 +45,7 @@ hr {
 /* Profile elements */
 
 .profile-pic {
-    max-height: 225px;
+    max-height: 150px;
     border-radius: 200px;
     margin: 25px;
     box-shadow: 1px 1px 20px 0px #FFFFFF;
@@ -126,7 +126,6 @@ hr {
     transition: box-shadow 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, border-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s;
 }
 
-
 /* Socials elements */
 
 .socials {
@@ -136,10 +135,6 @@ hr {
 .social {
     
     width:20px;
-}
-
-.social-svg{
-
 }
 
 .social a {
