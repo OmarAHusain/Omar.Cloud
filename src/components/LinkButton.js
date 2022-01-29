@@ -4,7 +4,6 @@ import '../App.css';
 const LinkButton = props => {
     const {
         name,
-        title,
         link,
         picture,
         alt
@@ -12,7 +11,6 @@ const LinkButton = props => {
 
     return (
         <div class="link">
-            <h3 class="link-title">{title}</h3>
             <a href={link} target="blank"> 
                 <div class="link-btn-div row">
                     <div class="link-img-div col">

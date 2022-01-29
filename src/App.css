@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 /* Author: Omar Adam Husain */
-/* Reason: Custom CSS for OMAR.CLOUD elements */
+/* Purpose: Custom CSS for OMAR.CLOUD elements */
 
 *::before {
 	box-sizing: border-box;
@@ -9,10 +9,22 @@
 
 body {
 	margin: 0;
+    padding: 0;
 	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+    background-color: black;
+    height: 100vh;
 }
+
+/*body::after {
+    position: absolute;
+    background-color: black;
+    content: "";
+    width: 100%;
+    height: 30%;
+    z-index: -1;
+}*/
 
 .background {
     background-color: black;
@@ -20,35 +32,17 @@ body {
 }
 
 .center-div {
+
     text-align: center;
 }
 
-.center-div a {
-    background-color: rgb(34, 34, 34);
-    color: white;
-    border: 1px solid;
-    border-color: black;
-    border-radius: 14px;
-    width: 240px;
-    display: inline-block;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 1.5;
-    text-decoration: none;
-    vertical-align: middle;
-    user-select: none;
-    padding: .375rem .75rem;
-    
+hr {
+    display:inline-block;
+    text-align: center;
+    width: 260px;
 }
 
-.center-div a:hover {
-    color: white;
-    background-color: black;
-    
-    filter: invert(1);
-    width: 260px;
-    transition: box-shadow 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, border-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s;
-}
+/* Profile elements */
 
 .profile-pic {
     max-height: 225px;
@@ -74,10 +68,7 @@ body {
     text-shadow: 1px 1px 5px #000000;
 }
 
-.social-svg{
-    margin-right: 10px;
-    margin-bottom: 3px;
-}
+/* Link elements */
 
 .link-btn-div {
     display: inline-block;
@@ -104,7 +95,65 @@ body {
 }
 
 .link-title {
-    margin: 20px;
     font-size: 18px;
     color: White;
 }
+
+.link a {
+    background-color: rgb(34, 34, 34);
+    color: white;
+    border: 1px solid;
+    border-color: black;
+    border-radius: 14px;
+    width: 240px;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-decoration: none;
+    vertical-align: middle;
+    user-select: none;
+    padding: .375rem .75rem;
+    
+}
+
+.link a:hover {
+    color: white;
+    background-color: black;
+    
+    filter: invert(1);
+    width: 260px;
+    transition: box-shadow 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, border-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s;
+}
+
+
+/* Socials elements */
+
+.socials {
+    width: 260px;
+}
+
+.social {
+    
+    width:20px;
+}
+
+.social-svg{
+
+}
+
+.social a {
+    background-color: rgb(34, 34, 34);
+    color: white;
+    border-radius: 60px;
+    display: inline-block;
+    padding: .375rem .375rem ;    
+}
+.social a:hover {
+    color: white;
+    background-color: black;
+    
+    filter: invert(1);
+    transition: box-shadow 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, border-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s;
+}
+
