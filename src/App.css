@@ -38,6 +38,16 @@ body {
     vertical-align: middle;
     user-select: none;
     padding: .375rem .75rem;
+    
+}
+
+.center-div a:hover {
+    color: white;
+    background-color: black;
+    
+    filter: invert(1);
+    width: 260px;
+    transition: box-shadow 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, border-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s;
 }
 
 .profile-pic {
@@ -66,6 +76,7 @@ body {
 
 .social-svg{
     margin-right: 10px;
+    margin-bottom: 3px;
 }
 
 .link-btn-div {
@@ -82,8 +93,9 @@ body {
 }
 
 .link-img{
-    max-height: 30px;
+    max-height: 40px;
     margin-right: 10px;
+    filter: grayscale(100%);
 }
 
 .link {
